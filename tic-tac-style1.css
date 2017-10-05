@@ -1,0 +1,31 @@
+
+.square {
+	width: 185px;
+	height: 185px;
+	max-width: 185px;
+	max-height: 185px;
+	background-color: white;
+    color: black;
+    border: 2px solid #e7e7e7;
+    text-decoration: none;
+    cursor: pointer;
+	/*border: solid black 1px;*/
+}
+
+#board {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+}
+
+/*#row1 {
+	margin-top: 160px;
+}
+
+#row2 {
+	margin-top: 160px;
+}
+
+#row3 {
+	margin-top: 160px;
+}*/
