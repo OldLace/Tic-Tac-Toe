@@ -125,11 +125,12 @@ $(function() {
                  if( turn >= 3) {
                      findWinner(playerEx, winningCondition);
                      findWinner(playerOh, winningCondition);
+
                  }
                  else {
 
                  }
-
+                  drawCount();
                  console.log(turn);
              })
         }
@@ -156,6 +157,7 @@ $(function() {
 
             }
             turn += 1
+            drawCount();
             console.log(turn);
         })
     }
@@ -182,6 +184,7 @@ $(function() {
 
             }
             turn += 1
+            drawCount();
             console.log(turn);
         })
     }
@@ -210,6 +213,7 @@ $(function() {
 
             }
             turn += 1
+            drawCount();
             console.log(turn);
         })
     }
@@ -238,6 +242,7 @@ $(function() {
 
             }
             turn += 1
+            drawCount();
             console.log(turn);
         })
     }
@@ -264,6 +269,7 @@ $(function() {
 
             }
             turn += 1
+            drawCount();
             console.log(turn);
         })
     }
@@ -290,6 +296,7 @@ $(function() {
 
             }
             turn += 1
+            drawCount();
             console.log(turn);
         })
     }
@@ -313,6 +320,7 @@ $(function() {
                 console.log(playerOh);
             }
             turn += 1
+            drawCount()
             console.log(turn);
         })
     }
@@ -338,7 +346,7 @@ $(function() {
 
             }
             turn += 1
-
+            drawCount()
             console.log(turn);
         })
     }
@@ -365,7 +373,11 @@ function findWinner(array, winningCondition) {
     return true;
 }
 
-
+let drawCount = function() {
+  if(turn >= 9) {
+    alert("The game has ended in a draw!")
+  }
+}
 
 
 //
