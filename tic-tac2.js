@@ -8,8 +8,8 @@
 let turn = 1;
 
 //*** When Player tally reaches one of the numbers in the array, they win! ****
-// const winConditions = [27,90,600,126,235,356,137,345];
-let winConditions = ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I'];
+const winConditions = [27,90,600,126,235,356,137,345];
+
 
 // ****Square Value for Win Tracker***
 // square1 = 15
@@ -102,19 +102,19 @@ $(function() {
 
     // if( $('#leftmenu').is(':empty') )
         if($("#one").is(':empty')) {
-             $('#one').one('click', function() {
+             $('#one').on('click', function() {
                  // $('#two').prepend('<img src="ex.png" />');
                  if (turn % 2 === 0) {
                      $("#one").css("background-image", "url('ex.png')");
                      playerEx.push("A");
-                     $("h2").text("Make your move, Player O!");
                      console.log(playerEx);
                  }
-                 else {
+                 else if
                      $("#one").css("background-image", "url('oh.png')");
                      playerOh.push("A");
-                     $("h2").text("Make your move, Player X!");
                      console.log(playerOh);
+             } else if($('#one').hasTag("img")){
+
                  }
                  turn += 1
 
@@ -127,21 +127,15 @@ $(function() {
 
     // if( $('#leftmenu').is(':empty') )
     if($("#two").is(':empty')) {
-        $('#two').one('click', function() {
+        $('#two').on('click', function() {
             // $('#two').prepend('<img src="ex.png" />');
             if (turn % 2 === 0) {
                 $("#two").css("background-image", "url('ex.png')");
                 playerEx.push("B");
-                $("h2").text("Make your move, Player O!");
-                console.log(playerEx);
-
             }
             else {
                 $("#two").css("background-image", "url('oh.png')");
                 playerOh.push("B");
-                $("h2").text("Make your move, Player X!");
-                console.log(playerOh);
-
             }
             turn += 1
             console.log(turn);
@@ -153,21 +147,15 @@ $(function() {
 
     // if( $('#leftmenu').is(':empty') )
     if($("#three").is(':empty')) {
-        $('#three').one('click', function() {
+        $('#three').on('click', function() {
             // $('#two').prepend('<img src="ex.png" />');
             if (turn % 2 === 0) {
                 $("#three").css("background-image", "url('ex.png')");
                 playerEx.push("C");
-                $("h2").text("Make your move, Player O!");
-                console.log(playerEx);
-
             }
             else {
                 $("#three").css("background-image", "url('oh.png')");
                 playerOh.push("C");
-                $("h2").text("Make your move, Player X!");
-                console.log(playerOh);
-
             }
             turn += 1
             console.log(turn);
@@ -181,21 +169,15 @@ $(function() {
 
     // if( $('#leftmenu').is(':empty') )
     if($("#four").is(':empty')) {
-        $('#four').one('click', function() {
+        $('#four').on('click', function() {
             // $('#two').prepend('<img src="ex.png" />');
             if (turn % 2 === 0) {
                 $("#four").css("background-image", "url('ex.png')");
                 playerEx.push("D");
-                $("h2").text("Make your move, Player O!");
-                console.log(playerEx);
-
             }
             else {
                 $("#four").css("background-image", "url('oh.png')");
                 playerOh.push("D");
-                $("h2").text("Make your move, Player X!")
-                console.log(playerOh);
-
             }
             turn += 1
             console.log(turn);
@@ -209,21 +191,15 @@ $(function() {
 
     // if( $('#leftmenu').is(':empty') )
     if($("#five").is(':empty')) {
-        $('#five').one('click', function() {
+        $('#five').on('click', function() {
             // $('#two').prepend('<img src="ex.png" />');
             if (turn % 2 === 0) {
                 $("#five").css("background-image", "url('ex.png')");
                 playerEx.push("E");
-                $("h2").text("Make your move, Player O!");
-                console.log(playerEx);
-
             }
             else {
                 $("#five").css("background-image", "url('oh.png')");
                 playerOh.push("E");
-                $("h2").text("Make your move, Player X!");
-                console.log(playerOh);
-
             }
             turn += 1
             console.log(turn);
@@ -235,21 +211,15 @@ $(function() {
 
     // if( $('#leftmenu').is(':empty') )
     if($("#six").is(':empty')) {
-        $('#six').one('click', function() {
+        $('#six').on('click', function() {
             // $('#two').prepend('<img src="ex.png" />');
             if (turn % 2 === 0) {
                 $("#six").css("background-image", "url('ex.png')");
                 playerEx.push("F");
-                $("h2").text("Make your move, Player O!");
-                console.log(playerEx);
-
             }
             else {
                 $("#six").css("background-image", "url('oh.png')");
                 playerOh.push("F");
-                $("h2").text("Make your move, Player X!")
-                console.log(playerOh);
-
             }
             turn += 1
             console.log(turn);
@@ -261,21 +231,15 @@ $(function() {
 
     // if( $('#leftmenu').is(':empty') )
     if($("#seven").is(':empty')) {
-        $('#seven').one('click', function() {
+        $('#seven').on('click', function() {
             // $('#two').prepend('<img src="ex.png" />');
             if (turn % 2 === 0) {
                 $("#seven").css("background-image", "url('ex.png')");
                 playerEx.push("G");
-                $("h2").text("Make your move, Player O!")
-                console.log(playerEx);
-
             }
             else {
                 $("#seven").css("background-image", "url('oh.png')");
                 playerOh.push("G");
-                $("h2").text("Make your move, Player X!");
-                console.log(playerOh);
-
             }
             turn += 1
             console.log(turn);
@@ -287,18 +251,15 @@ $(function() {
 
     // if( $('#leftmenu').is(':empty') )
     if($("#eight").is(':empty')) {
-        $('#eight').one('click', function() {
+        $('#eight').on('click', function() {
             // $('#two').prepend('<img src="ex.png" />');
             if (turn % 2 === 0) {
                 $("#eight").css("background-image", "url('ex.png')");
                 playerEx.push("H");
-                $("h2").text("Make your move, Player O!")
-                console.log(playerEx);
             }
             else {
                 $("#eight").css("background-image", "url('oh.png')");
                 playerEx.push("H");
-                console.log(playerOh);
             }
             turn += 1
             console.log(turn);
@@ -310,23 +271,17 @@ $(function() {
 
     // if( $('#leftmenu').is(':empty') )
     if($("#nine").is(':empty')) {
-        $('#nine').one('click', function() {
+        $('#nine').on('click', function() {
             // $('#two').prepend('<img src="ex.png" />');
             if (turn % 2 === 0) {
                 $("#nine").css("background-image", "url('ex.png')");
                 playerEx.push("I");
-                $("h2").text("Make your move, Player O!")
-                console.log(playerEx);
-
             }
             else {
                 $("#nine").css("background-image", "url('oh.png')");
                 playerEx.push("I");
-                console.log(playerOh);
-
             }
             turn += 1
-
             console.log(turn);
         })
     }
