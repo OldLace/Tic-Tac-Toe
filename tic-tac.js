@@ -5,7 +5,7 @@
  let playerOh = [];
 
  //Turn Zero for Ex, 1 for Oh
-let turn = 1;
+let turn = 0;
 
 //*** When Player tally reaches one of the numbers in the array, they win! ****
 // const winConditions = [27,90,600,126,235,356,137,345];
