@@ -11,7 +11,7 @@ let turn = 0;
 //*** When Player tally reaches one of the numbers in the array, they win! ****
 // const winConditions = [27,90,600,126,235,356,137,345];
 
-var winningCondition = ['ABC','ADG','AEI','BEF','BEH','CEG','CFI','GHI','A','B'];
+var winningCondition = ['ABC','ADG','AEI','BEF','BEH','CEG','CFI','GHI'];
 
 //- ABANDONED: HALFWAY THROUGH I REALIZED IT WASN'T GOING TO WORK :(
 // ****Square Value for Win Tracker***
